@@ -23,7 +23,6 @@ rm -r $BUILD_DIR/node_modules/terser
 rm -r $BUILD_DIR/node_modules/node-sass
 rm -r $BUILD_DIR/node_modules/browser-sync-ui
 rm -r $BUILD_DIR/node_modules/libphonenumber-js
-rm -r $BUILD_DIR/node_modules/lodash
 rm -r $BUILD_DIR/node_modules/bootstrap
 rm -r $BUILD_DIR/node_modules/vue
 rm -r $BUILD_DIR/node_modules/moment
