@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+# bin/compile BUILD_DIR CACHE_DIR ENV_DIR
+
+BUILD_DIR=$1
+
+# Find large directories
+# du -h -d 1 node_modules | grep '[0-9]M\>' | sort -hr
+
+echo "-----> Deleting the node_modules directory"
+rm -r $BUILD_DIR/node_modules/.cache
+rm -r $BUILD_DIR/node_modules/vnu-jar
+rm -r $BUILD_DIR/node_modules/rxjs
+rm -r $BUILD_DIR/node_modules/@fortawesome
+rm -r $BUILD_DIR/node_modules/kinetic
+rm -r $BUILD_DIR/node_modules/bootstrap-vue
+rm -r $BUILD_DIR/node_modules/svg-country-flags
+rm -r $BUILD_DIR/node_modules/prettier
+rm -r $BUILD_DIR/node_modules/core-js
+rm -r $BUILD_DIR/node_modules/rx
+rm -r $BUILD_DIR/node_modules/terser-webpack-plugin
+rm -r $BUILD_DIR/node_modules/core-js-pure
+rm -r $BUILD_DIR/node_modules/terser
+rm -r $BUILD_DIR/node_modules/node-sass
+rm -r $BUILD_DIR/node_modules/browser-sync-ui
+rm -r $BUILD_DIR/node_modules/libphonenumber-js
+rm -r $BUILD_DIR/node_modules/lodash
+rm -r $BUILD_DIR/node_modules/bootstrap
+rm -r $BUILD_DIR/node_modules/vue
+rm -r $BUILD_DIR/node_modules/moment
+rm -r $BUILD_DIR/node_modules/browsersync
+rm -r $BUILD_DIR/node_modules/vue-phone-number-input
+rm -r $BUILD_DIR/node_modules/sass
+rm -r $BUILD_DIR/node_modules/caniuse-lite
+rm -r $BUILD_DIR/node_modules/@fullcalendar
+rm -r $BUILD_DIR/node_modules/quill
+rm -r $BUILD_DIR/node_modules/pusher-js
+rm -r $BUILD_DIR/node_modules/webpack
+rm -r $BUILD_DIR/node_modules/nunjucks
+rm -r $BUILD_DIR/node_modules/rtlcss
+rm -r $BUILD_DIR/node_modules/uglify-js
+rm -r $BUILD_DIR/node_modules/popper.js
+rm -r $BUILD_DIR/node_modules/jquery
+rm -r $BUILD_DIR/node_modules/css-loader
+rm -r $BUILD_DIR/node_modules/postcss
+rm -r $BUILD_DIR/node_modules/postcss-modules-scope
+rm -r $BUILD_DIR/node_modules/postcss-modules-local-by-default
+rm -r $BUILD_DIR/node_modules/postcss-modules-extract-imports
+rm -r $BUILD_DIR/node_modules/icss-utils
+rm -r $BUILD_DIR/node_modules/clean-css
+rm -r $BUILD_DIR/node_modules/chart.js
+rm -r $BUILD_DIR/node_modules/moment-timezone
+rm -r $BUILD_DIR/node_modules/js-beautify
+rm -r $BUILD_DIR/node_modules/webpack-dev-server
